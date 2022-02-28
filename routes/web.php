@@ -14,5 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return 'Selamat Datang';
 });
+
+Route::get('/about', function () {
+    return '2041720215_Arya Wahjoe Setiawan_TI-2D';
+});
+
+Route::get('/articles/{id}', function ($id) {
+    return 'Halaman Artikel Dengan ID'.$id;
+});
+Route::get('/posts/{post}/comments/{comment}', function ($postId, $commentId) {
+    //
+    });
+
