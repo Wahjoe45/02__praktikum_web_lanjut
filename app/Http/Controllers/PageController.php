@@ -19,9 +19,9 @@ class PageController extends Controller
         return '2041720215_Arya Wahjoe Setiawan_TI-2D';
     }
 
-    public function articles()
+    public function articles($id)
     {
-        return 'Halaman Artikel Dengan ID';
+        return 'Halaman Artikel Dengan ID'.$id;
 
     }
 }
