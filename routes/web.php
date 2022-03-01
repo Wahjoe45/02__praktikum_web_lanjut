@@ -17,11 +17,9 @@ use App\Http\Controllers\PageController;
 Route::get('/', [PageController::class, 'index']);
 
 
-Route::get('/', [PageController::class, 'about']);
+Route::get('/about', [PageController::class, 'about']);
 
-Route::get('/articles/{id}', function ($id) {
-    return 'Halaman Artikel Dengan ID'.$id;
-});
+Route::get('/articles/{id}', [PageController::class, 'articles']);
 Route::get('/posts/{post}/comments/{comment}', function ($postId, $commentId) {
     //
     });
